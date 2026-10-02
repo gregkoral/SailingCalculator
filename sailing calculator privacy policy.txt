@@ -45,51 +45,76 @@ real time.
   at the operating-system level and is outside the developer's control;
   it is disclosed here for transparency, even though the developer itself
   never receives, stores, or has access to this data.
+- When you use the App's wind/weather features, your current coordinates
+  (or the coordinates of a point you selected on the map) are sent to the
+  third-party weather service Open-Meteo (open-meteo.com) solely in order
+  to request current or forecast wind direction for that location. This
+  request does not include your name, device identifiers, or any account
+  information, because the App has none to send — only the geographic
+  coordinates needed to answer "what is the wind doing here". Open-Meteo
+  does not require or use an API key or account for this request. This
+  data is governed by Open-Meteo's own privacy practices
+  (https://open-meteo.com/en/terms), independently of this App.
 - You can disable location access at any time through your device
   settings. Core features of the App will not work without location
   access, since the App is built around real-time positioning.
 
 
-3. OFFLINE MAP DATA
+3. LOCAL STORAGE ON YOUR DEVICE
 
-The App allows you to download map tiles for offline use while sailing.
-These map tiles are downloaded directly from third-party map tile
-providers to your device when you choose to cache an area, so that you
-can view maps without an internet connection while on the water. This is
-general map imagery, not personal or user-identifying data, and it is
-never sent to the developer. You can remove cached map tiles at any time
-by clearing the App's storage or uninstalling the App.
+The App saves some information locally on your own device so that it
+keeps working the way you left it between sessions. This includes:
+
+- Your app settings and preferences (e.g., display and calibration
+  options).
+- Manually planned routes you create in the App (start/destination
+  coordinates and route points).
+- Information about which map area you have downloaded for offline use,
+  and the downloaded map tiles themselves.
+
+None of this locally stored data is ever transmitted to the developer or
+to any third party — it stays on your device, under your control. You can
+delete it at any time by clearing the App's storage in your device
+settings or by uninstalling the App.
 
 
 4. INTERNET ACCESS
 
-The App uses internet access solely to download offline map tiles, as
-described above. No other data is sent over the internet by the App.
+The App uses internet access for two purposes only:
+
+- Downloading offline map tiles from third-party map tile providers, as
+  described in Section 3.
+- Requesting wind direction/forecast data from Open-Meteo, as described
+  in Section 2.
+
+No other data is sent over the internet by the App.
 
 
 5. DATA SHARING WITH THIRD PARTIES
 
-We do not collect any user data, so we have no user data to sell, rent,
-trade, or share with third parties. The only outside parties technically
-involved in the App's operation are:
+We do not collect any personal user data ourselves, so we have no such
+data to sell, rent, or trade. The only outside parties technically
+involved in the App's operation, and what they receive, are:
 
-- Map tile providers, contacted only to download map imagery you request
-  for offline use.
-- Google Play Services, which may process your approximate location at
-  the operating-system level as described in Section 2, subject to
-  Google's own Privacy Policy.
+- Map tile providers — receive requests for map imagery for the area you
+  choose to download; do not receive your identity or any personal data.
+- Open-Meteo — receives geographic coordinates only, to return wind
+  data for that location, as described in Section 2.
+- Google Play Services — may process your approximate location at the
+  operating-system level as described in Section 2, subject to Google's
+  own Privacy Policy.
 
-The developer does not receive, store, or share any data from either of
-these.
+The developer itself does not receive, store, or further share any data
+from or with any of these parties.
 
 
 6. DATA RETENTION
 
 The developer does not operate a backend server and does not collect,
-receive, or retain any user data, including location data. The App does
-not save personal data to your device's storage either. The only thing
-stored locally on your device is the offline map imagery described in
-Section 3, which you control and can delete at any time.
+receive, or retain any user data remotely. Locally stored data (settings,
+manually planned routes, offline map tiles — see Section 3) remains only
+on your device, under your control, until you clear it or uninstall the
+App.
 
 
 7. CHILDREN'S PRIVACY
